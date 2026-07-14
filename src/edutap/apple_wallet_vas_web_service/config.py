@@ -70,7 +70,7 @@ class DatabaseSettings(_FileAwareSettings):
     """ """
 
     model_config = SettingsConfigDict(
-        env_prefix="edutap_wallet_apple_wallet_web_service_db_",
+        env_prefix="edutap_apple_wallet_vas_web_service_db_",
         case_sensitive=False,
         extra="ignore",
     )
@@ -89,13 +89,13 @@ class AppleWalletWebServiceSettings(_FileAwareSettings):
     """ """
 
     model_config = SettingsConfigDict(
-        env_prefix="edutap_wallet_apple_wallet_web_service_",
+        env_prefix="edutap_apple_wallet_vas_web_service_",
         case_sensitive=False,
         extra="ignore",
     )
 
     auth_required: bool = True
-    log_file_path: Path = Path("/") / "var" / "log" / "apple_wallet_web_service"
+    log_file_path: Path = Path("/") / "var" / "log" / "apple_wallet_vas_web_service"
 
     url: HttpUrl | None = None
     authentication_token: str | None = None

@@ -11,7 +11,7 @@ import uvicorn
 
 logger.setLevel("DEBUG")
 
-__version__ = version("edutap.apple_wallet_web_service")
+__version__ = version("edutap.apple_wallet_vas_web_service")
 
 
 settings = AppleWalletWebServiceSettings()
@@ -45,7 +45,7 @@ app = FastAPI(
 @app.get("/")
 async def info():
     return {
-        "package": "edutap.apple_wallet_web_service",
+        "package": "edutap.apple_wallet_vas_web_service",
         "version": __version__,
         # "broker_url": settings.broker_url,
         # "topic": settings.notification_topic,
@@ -65,7 +65,7 @@ async def test_message(request: Request, msg: str):
 
 def main():
     uvicorn.run(
-        "edutap.apple_wallet_web_service.standalone:app",
+        "edutap.apple_wallet_vas_web_service.standalone:app",
         host="0.0.0.0",
         port=8084,
         log_level="debug",

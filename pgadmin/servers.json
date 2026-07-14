@@ -3,7 +3,7 @@
         "1": {
             "Name": "Apple Wallet Web Service DB",
             "Group": "Servers",
-            "Host": "apple-wallet-web-service-db",
+            "Host": "apple-wallet-vas-web-service-db",
             "Port": 5432,
             "MaintenanceDB": "postgres",
             "Username": "apple",

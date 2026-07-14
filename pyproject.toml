@@ -1,6 +1,6 @@
 [project]
-name = "edutap.apple_wallet_web_service"
-version = "1.0.0.dev0"
+name = "edutap.apple_wallet_vas_web_service"
+version = "2.0.0.dev0"
 description = "A Apple Wallet Web Service Implementation."
 keywords = ["wallet", "apple", "web update service", ]
 readme = "README.md"
@@ -31,9 +31,9 @@ dependencies = [
   ]
 
 [project.urls]
-Source = "https://github.com/edutap-eu/edutap.apple_wallet_web_service"
-Issues = "https://github.com/edutap-eu/edutap.apple_wallet_web_service/issues"
-Documentation = "https://docs.edutap.eu/packages/edutap_apple_wallet_web_service/index.html"
+Source = "https://github.com/edutap-eu/edutap.apple_wallet_vas_web_service"
+Issues = "https://github.com/edutap-eu/edutap.apple_wallet_vas_web_service/issues"
+Documentation = "https://docs.edutap.eu/packages/edutap_apple_wallet_vas_web_service/index.html"
 
 [project.optional-dependencies]
 fastapi = [
@@ -63,7 +63,7 @@ develop = [
 ]
 
 [project.scripts]
-web_service = "edutap.apple_wallet_web_service.standalone:main"
+web_service = "edutap.apple_wallet_vas_web_service.standalone:main"
 
 [build-system]
 requires = ["setuptools>=61"]
